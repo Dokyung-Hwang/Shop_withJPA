@@ -19,6 +19,7 @@ import org.thymeleaf.util.StringUtils;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -185,6 +186,8 @@ class ItemRepositoryTest {
             item.setRegTime(LocalDateTime.now());
             item.setUpdateTime(LocalDateTime.now());
             itemRepository.save(item);
+            ArrayList<Integer> arr = new ArrayList<>();
+
         }
     }
 }
